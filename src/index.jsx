@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom"
 import './index.css';
 import { KandyKorner } from "./components/KandyKorner"
 // import App from './App';
@@ -9,7 +10,9 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <App />
      */}
+     <Router>
      <KandyKorner />
+     </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

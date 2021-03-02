@@ -1,22 +1,19 @@
 import React from "react"
 import { Route } from "react-router-dom"
+import { ApplicationViews } from "../ApplicationViews"
 import { LocationList } from "./locations/LocationList"
 import { LocationProvider } from "./locations/LocationProvider"
 import { NavBar } from "./nav/NavBar"
 
-export const KandyKorner = ( props ) => (
+export const KandyKorner = () => (
   <>
-  <Route  render={() => {
+  <Route render={() => {
     return (
       <>
         <NavBar />
+        <ApplicationViews />
       </>
     )
   }} />
-  {/* <h1>Kandy Korner</h1>
-  <div><p>Hi</p></div>
-  <LocationProvider>
-    <LocationList />
-  </LocationProvider> */}
   </>
 ) // KandyKorner

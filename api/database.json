@@ -1,46 +1,299 @@
 {
- "locations": [
-  {
-   "id": 1,
-   "name": "Location 1",
-   "address": "123 fake street",
-   "footage": 2500,
-   "handicapAccesssable": true
-  },
-  {
-   "id": 2,
-   "name": "Location 2",
-   "address": "456 fake street",
-   "footage": 5200,
-   "handicapAccesssable": false
-  },
-  {
-   "id": 3,
-   "name": "Location 3",
-   "address": "789 fake street",
-   "footage": 250,
-   "handicapAccesssable": true
-  },
-  {
-   "id": 4,
-   "name": "Location 4",
-   "address": "1234 fake street",
-   "footage": 500,
-   "handicapAccesssable": true
-  },
-  {
-   "id": 5,
-   "name": "Location 5",
-   "address": "5678 fake street",
-   "footage": 2500,
-   "handicapAccesssable": false
-  },
-  {
-   "id": 6,
-   "name": "Location 6",
-   "address": "9101 fake street",
-   "footage": 25000,
-   "handicapAccesssable": true
-  }
- ]
+  "locations":[
+    {
+      "id":1,
+      "name":"Location 1",
+      "address":"123 fake street",
+      "footage":2500,
+      "handicapAccesssable":true
+    },
+    {
+      "id":2,
+      "name":"Location 2",
+      "address":"456 fake street",
+      "footage":5200,
+      "handicapAccesssable":false
+    },
+    {
+      "id":3,
+      "name":"Location 3",
+      "address":"789 fake street",
+      "footage":250,
+      "handicapAccesssable":true
+    },
+    {
+      "id":4,
+      "name":"Location 4",
+      "address":"1234 fake street",
+      "footage":500,
+      "handicapAccesssable":true
+    },
+    {
+      "id":5,
+      "name":"Location 5",
+      "address":"5678 fake street",
+      "footage":2500,
+      "handicapAccesssable":false
+    },
+    {
+      "id":6,
+      "name":"Location 6",
+      "address":"9101 fake street",
+      "footage":25000,
+      "handicapAccesssable":true
+    }
+  ],
+  "employees":[
+    {
+      "id":1,
+      "name":"Peggy",
+      "job":"Professional Dog Snuggles",
+      "locationId":1
+    },
+    {
+      "id":2,
+      "name":"Cat Lady",
+      "job":"Picks up cat poop",
+      "locationId":1
+    },
+    {
+      "id":3,
+      "name":"Mage",
+      "job":"Eats poop",
+      "locationId":2
+    },
+    {
+      "id":4,
+      "name":"Hobo Jack",
+      "job":"Doesn't actually work here, just hangs out here.",
+      "locationId":2
+    },
+    {
+      "id":5,
+      "name":"Drifter Jeff",
+      "job":"Hobo Jack's friend",
+      "locationId":3
+    },
+    {
+      "id":6,
+      "name":"Charlie",
+      "job":"Horse without a liver.",
+      "locationId":3
+    },
+    {
+      "name":"Sunny",
+      "job":"Ray Of Happiness",
+      "locationId":2,
+      "id":7
+    }
+  ],
+  "customers":[
+    {
+      "id":7,
+      "name":"Hannah Hall",
+      "address":"7002 Chestnut Ct",
+      "email":"hannah.hall@gmail.com"
+    },
+    {
+      "id":1,
+      "name":"Customer 1",
+      "address":"123 W Fake St",
+      "email":"customer1@gmail.com"
+    },
+    {
+      "id":2,
+      "name":"Customer 2",
+      "address":"456 Also Fake Rd.",
+      "email":"customer2@gmail.com"
+    },
+    {
+      "id":3,
+      "name":"Customer 3",
+      "address":"789 Fake Way",
+      "email":"customer3@gmail.com"
+    },
+    {
+      "id":4,
+      "name":"Customer 4",
+      "address":"1234 Fake Blvd",
+      "email":"customer4@gmail.com"
+    },
+    {
+      "id":5,
+      "name":"Customer 5",
+      "address":"5678 Fake Ct",
+      "email":"customer5@gmail.com"
+    },
+    {
+      "id":6,
+      "name":"Customer 6",
+      "address":"123 E Fake St",
+      "email":"customer6@gmail.com"
+    },
+    {
+      "email":"test.name@gmail.com",
+      "name":"test name",
+      "id":8
+    }
+  ],
+  "productTypes":[
+    {
+      "id":1,
+      "name":"Cake"
+    },
+    {
+      "id":2,
+      "name":"Bread"
+    },
+    {
+      "id":3,
+      "name":"Drink"
+    },
+    {
+      "id":4,
+      "name":"Cookie"
+    }
+  ],
+  "products":[
+    {
+      "id":1,
+      "name":"Red Velvet",
+      "price":35.99,
+      "description":"Red velvet cake is traditionally a red, red-brown, crimson or scarlet-colored chocolate layer cake, layered with ermine icing.",
+      "productTypeId":1
+    },
+    {
+      "id":2,
+      "name":"Mango Creme Brulee",
+      "price":49.99,
+      "description":"Vanilla sponge cake layered with vanilla brulee and mango mousse. Decorated with fresh mango, strawberries, chocolate, and mango cream.",
+      "productTypeId":1
+    },
+    {
+      "id":3,
+      "name":"Multigrain",
+      "price":16.99,
+      "description":"Multigrain bread is a type of bread prepared with two or more types of grain. Grains used include barley, flax, millet, oats, wheat, and whole-wheat flour, among others.",
+      "productTypeId":2
+    },
+    {
+      "id":4,
+      "name":"French Garlic Cheese",
+      "price":19.99,
+      "description":"French bread, mozzarella cheese, parmesan cheese, garlic, olive oil.",
+      "productTypeId":2
+    },
+    {
+      "id":5,
+      "name":"Hazelnut Latte",
+      "price":9.89,
+      "description":"Delicious homemade hazelnut milk flavored with maple, cinnamon, nutmeg & vanilla is perfect with coffee or espresso!",
+      "productTypeId":3
+    },
+    {
+      "id":6,
+      "name":"Caramel Macchiato",
+      "price":11.89,
+      "description":"Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.",
+      "productTypeId":3
+    },
+    {
+      "id":7,
+      "name":"New York Bagel",
+      "price":7.55,
+      "description":"A bread product originating in Poland, traditionally shaped by hand into the form of a ring from yeasted wheat dough, roughly hand-sized, which is first boiled for a short time in water and then baked.",
+      "productTypeId":2
+    },
+    {
+      "id":8,
+      "name":"Viennese Whirls",
+      "price":5,
+      "description":"A soft shortbread biscuit, commonly filled with buttercream and jam",
+      "productTypeId":4
+    },
+    {
+      "id":9,
+      "name":"Caramel Shortbread",
+      "price":5,
+      "description":"A biscuit confectionery item composed of a rectangular shortbread biscuit base topped with a very soft caramel filling and a milk chocolate topping.",
+      "productTypeId":4
+    },
+    {
+      "id":10,
+      "name":"Countess",
+      "price":5,
+      "description":"Small, slightly sweet shortbread that is typical of Guianan cuisine, the cuisine of French Guiana.",
+      "productTypeId":4
+    },
+    {
+      "id":11,
+      "name":"Ghoriba",
+      "price":5,
+      "description":"A round, shortbread cookie prepared in the Maghreb and other parts of the Middle East.",
+      "productTypeId":4
+    },
+    {
+      "id":12,
+      "name":"Kourabiedes",
+      "price":5,
+      "description":"Greek shortbread.",
+      "productTypeId":4
+    },
+    {
+      "id":13,
+      "name":"Blueberry Muffin ",
+      "price":6.9,
+      "description":"An individual-sized, baked quick bread product with fresh blueberries.",
+      "productTypeId":2
+    },
+    {
+      "id":14,
+      "name":"Curry Bread",
+      "price":8.89,
+      "description":"Some Japanese curry is wrapped in a piece of dough, which is coated in flaky bread crumbs, and usually deep fried or baked.",
+      "productTypeId":2
+    },
+    {
+      "id":15,
+      "name":"Tea",
+      "price":7.99,
+      "description":"Green, white, oolong, earl grey, matcha, chai, etc.",
+      "productTypeId":3
+    },
+    {
+      "id":16,
+      "name":"Cappuccino",
+      "price":9.89,
+      "description":"A cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam.",
+      "productTypeId":3
+    },
+    {
+      "id":17,
+      "name":"Carrot Cake",
+      "price":22.89,
+      "description":"Moist, dense, sweet cake made with carrots.",
+      "productTypeId":1
+    },
+    {
+      "id":18,
+      "name":"Tiramisu",
+      "price":34.9,
+      "description":"A coffee-flavoured Italian dessert. It is made of ladyfingers (savoiardi) dipped in coffee, layered with a whipped mixture of eggs, sugar and mascarpone cheese, flavoured with cocoa.",
+      "productTypeId":1
+    },
+    {
+      "id":19,
+      "name":"Tres Leches",
+      "price":31.99,
+      "description":"A sponge cake—in some recipes, a butter cake—soaked in three kinds of milk: evaporated milk, condensed milk, and heavy cream.",
+      "productTypeId":1
+    },
+    {
+      "id":20,
+      "name":"Mille-feuille",
+      "price":28.89,
+      "description":"Three layers of puff pastry alternating with two layers of pastry cream. The top is glazed in white (icing) and brown (chocolate) strips, and combed into a distinctive pattern.",
+      "productTypeId":1
+    }
+  ]
 }

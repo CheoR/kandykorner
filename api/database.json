@@ -1,0 +1,46 @@
+{
+ "locations": [
+  {
+   "id": 1,
+   "name": "Location 1",
+   "address": "123 fake street",
+   "footage": 2500,
+   "handicapAccesssable": true
+  },
+  {
+   "id": 2,
+   "name": "Location 2",
+   "address": "456 fake street",
+   "footage": 5200,
+   "handicapAccesssable": false
+  },
+  {
+   "id": 3,
+   "name": "Location 3",
+   "address": "789 fake street",
+   "footage": 250,
+   "handicapAccesssable": true
+  },
+  {
+   "id": 4,
+   "name": "Location 4",
+   "address": "1234 fake street",
+   "footage": 500,
+   "handicapAccesssable": true
+  },
+  {
+   "id": 5,
+   "name": "Location 5",
+   "address": "5678 fake street",
+   "footage": 2500,
+   "handicapAccesssable": false
+  },
+  {
+   "id": 6,
+   "name": "Location 6",
+   "address": "9101 fake street",
+   "footage": 25000,
+   "handicapAccesssable": true
+  }
+ ]
+}

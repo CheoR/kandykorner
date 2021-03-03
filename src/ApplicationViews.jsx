@@ -3,6 +3,8 @@ import { Route } from "react-router-dom"
 
 import { LocationList } from "./components/locations/LocationList"
 import { LocationProvider } from "./components/locations/LocationProvider"
+import { ProductList } from "./components/products/ProductList"
+import { ProductProvider } from "./components/products/ProductProvider"
 import { Home } from "./Home"
 
 
@@ -18,6 +20,12 @@ export const ApplicationViews = () => {
      <LocationList />
     </Route>
     </LocationProvider>
+
+  <ProductProvider>
+   <Route exact path="/products">
+    <ProductList />
+   </Route>
+  </ProductProvider>
   </>
  )
 }  // ApplicationView
